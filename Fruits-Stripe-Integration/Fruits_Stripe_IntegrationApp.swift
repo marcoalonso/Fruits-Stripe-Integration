@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct Fruits_Stripe_IntegrationApp: App {
+    
+    init() {
+        StripeAPI.defaultPublishableKey = "YOURPUBLISHABLEKEY"
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
